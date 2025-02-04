@@ -184,21 +184,19 @@ nav a {
     }
 
 #unete-equipo {
-    color: red;
-    padding: 40px 20px;
-    background-color: #2c3e50;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    max-width: 1200px;
-    margin: 0 auto;
-
+    margin:25px;
+    background-color: yellow; /* Fondo oscuro */
+    color: #ffffff; /* Texto blanco */
+    text-align: center;
 }
 
-#unete-equipo .titulo {
-    text-align: center;
+.unete-equipo .titulo {
     font-size: 2.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #ff6f61; /* Color destacado para el título */
+    text-transform: uppercase; /* Convertir texto a mayúsculas */
+    letter-spacing: 2px; /* Espaciado entre letras */
 }
 
 #contenedor-unete {
@@ -208,70 +206,96 @@ nav a {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
+    gap: 20px; /* Espacio entre elementos */
 }
 
 #texto-unete {
     flex: 1;
     max-width: 60%;
-    padding-right: 20px;
+    text-align: left;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
 }
 
 #texto-unete p {
     font-size: 1.1rem;
     line-height: 1.8;
     margin-bottom: 20px;
+    color: #f0f0f0; /* Color de texto más suave */
 }
 
 #texto-unete .boton {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #ff6f61;
+    padding: 12px 25px;
+    background-color: #ff6f61; /* Color del botón */
     color: #ffffff;
     border-radius: 5px;
     font-size: 1rem;
     font-weight: bold;
-    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para el botón */
 }
 
 #texto-unete .boton:hover {
-    background-color: #e65a50;
+    background-color: #e65a50; /* Color al hacer hover */
+    transform: translateY(-3px); /* Efecto de elevación */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada al hacer hover */
 }
 
 #imagen-unete {
     flex: 1;
     max-width: 40%;
+    border-radius: 10px;
+    overflow: hidden; /* Asegura que la imagen no sobresalga del contenedor */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra para la imagen */
 }
 
 #imagen-unete img {
-    width: 80%; /* Reducimos el tamaño de la imagen al 80% */
+    width: 100%;
+    height: auto;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+#imagen-unete img:hover {
+    transform: scale(1.05); /* Efecto de zoom al hacer hover */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .juego {
-        flex: 1 1 calc(50% - 20px);
+    #contenedor-unete {
+        flex-direction: column;
+        text-align: center;
     }
 
     #texto-unete, #imagen-unete {
         max-width: 100%;
-        padding: 0;
     }
 
-    #imagen-unete {
-        margin-top: 20px;
+    #texto-unete {
+        margin-bottom: 20px;
+    }
+
+    #imagen-unete img {
+        width: 80%; /* Reducir el tamaño de la imagen en móviles */
     }
 }
 
 @media (max-width: 480px) {
-    .juego {
-        flex: 1 1 100%;
+    #unete-equipo .titulo {
+        font-size: 2rem;
+    }
+
+    #texto-unete p {
+        font-size: 1rem;
     }
 
     #texto-unete .boton {
         width: 100%;
-        text-align: center;
+        padding: 10px;
     }
 }
 }
