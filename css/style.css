@@ -182,4 +182,96 @@ nav a {
     .cliente {
         flex: 1 1 100%;
     }
+
+#unete-equipo {
+    color: red;
+    padding: 40px 20px;
+    background-color: #2c3e50;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+#unete-equipo .titulo {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#contenedor-unete {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#texto-unete {
+    flex: 1;
+    max-width: 60%;
+    padding-right: 20px;
+}
+
+#texto-unete p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+#texto-unete .boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#texto-unete .boton:hover {
+    background-color: #e65a50;
+}
+
+#imagen-unete {
+    flex: 1;
+    max-width: 40%;
+}
+
+#imagen-unete img {
+    width: 80%; /* Reducimos el tamaño de la imagen al 80% */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .juego {
+        flex: 1 1 calc(50% - 20px);
+    }
+
+    #texto-unete, #imagen-unete {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    #imagen-unete {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .juego {
+        flex: 1 1 100%;
+    }
+
+    #texto-unete .boton {
+        width: 100%;
+        text-align: center;
+    }
+}
 }
