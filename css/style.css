@@ -183,61 +183,7 @@ nav a {
         flex: 1 1 100%;
     }
 
-#unete-equipo {
-    margin:25px;
-    background-color: yellow; /* Fondo oscuro */
-    color: #ffffff; /* Texto blanco */
-    text-align: center;
-}
 
-.unete-equipo .titulo {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    font-weight: bold;
-    color: #ff6f61; /* Color destacado para el título */
-    text-transform: uppercase; /* Convertir texto a mayúsculas */
-    letter-spacing: 2px; /* Espaciado entre letras */
-}
-
-#contenedor-unete {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    gap: 20px; /* Espacio entre elementos */
-}
-
-#texto-unete {
-    flex: 1;
-    max-width: 60%;
-    text-align: left;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
-}
-
-#texto-unete p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    margin-bottom: 20px;
-    color: #f0f0f0; /* Color de texto más suave */
-}
-
-#texto-unete .boton {
-    display: inline-block;
-    padding: 12px 25px;
-    background-color: #ff6f61; /* Color del botón */
-    color: #ffffff;
-    border-radius: 5px;
-    font-size: 1rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para el botón */
-}
 
 #texto-unete .boton:hover {
     background-color: #e65a50; /* Color al hacer hover */
