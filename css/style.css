@@ -298,4 +298,73 @@ nav a {
         padding: 10px;
     }
 }
+/* Estilos para el footer */
+footer {
+    background-color: #2c3e50; /* Fondo oscuro */
+    color: #ffffff; /* Texto blanco */
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px; /* Espacio entre las cajas */
+    border-top: 3px solid #ff6f61; /* Borde superior con color destacado */
+}
+
+/* Estilos para cada caja dentro del footer */
+.caja-inferior {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.caja-inferior:hover {
+    transform: translateY(-5px); /* Efecto de elevación al hacer hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada al hacer hover */
+}
+
+.caja-inferior h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #ff6f61; /* Color destacado para los títulos */
+    text-transform: uppercase; /* Convertir texto a mayúsculas */
+    letter-spacing: 1px; /* Espaciado entre letras */
+}
+
+.caja-inferior a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.caja-inferior a:hover {
+    color: #ff6f61; /* Cambia el color al hacer hover */
+}
+
+.caja-inferior p {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #f0f0f0; /* Color de texto más suave */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .caja-inferior {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
 }
